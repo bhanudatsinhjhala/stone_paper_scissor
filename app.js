@@ -33,7 +33,8 @@ function game(userChoice) {
 			document.getElementById(choice).classList.remove('red-glow')
 		}, 300);
 		computerScore++;
-		console.log(userScore + " " + computerScore) break;
+		console.log(userScore + " " + computerScore);
+			break;
 	case 'rr':
 	case 'pp':
 	case 'ss':
