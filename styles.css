@@ -20,6 +20,9 @@ sub {
 p {
 	font-size: 1.5rem
 }
+.message{
+  height: 5vh;
+}
 .container {
 	margin: auto;
 	width: 45vw;

@@ -16,7 +16,7 @@ function game(userChoice) {
 	case 'rs':
 	case 'pr':
 	case 'sp':
-		message.innerHTML = `${convertToWord(userChoice)}<sub>(User)</sub>destroys ${convertToWord(computerChoices)}<sub>(Computer)</sub>.You win 🔥🔥`;
+		message.innerHTML = `${convertToWord(userChoice)}<sub>(User)</sub>  destroys ${convertToWord(computerChoices)}<sub>(Computer)</sub>.  You win 🔥🔥`;
 		document.getElementById(choice).classList.add('green-glow');
 		setTimeout(function () {
 			document.getElementById(choice).classList.remove('green-glow')
@@ -27,7 +27,7 @@ function game(userChoice) {
 	case 'sr':
 	case 'rp':
 	case 'ps':
-		message.innerHTML = `${convertToWord(computerChoices)}<sub>(User)</sub>destroys ${convertToWord(userChoice)}<sub>(Computer)</sub>.You Lose 💩💩`;
+		message.innerHTML = `${convertToWord(computerChoices)}<sub>(User)</sub>  destroys ${convertToWord(userChoice)}<sub>(Computer)</sub>.  You Lose 💩💩`;
 		document.getElementById(choice).classList.add('red-glow');
 		setTimeout(function () {
 			document.getElementById(choice).classList.remove('red-glow')
@@ -38,7 +38,7 @@ function game(userChoice) {
 	case 'rr':
 	case 'pp':
 	case 'ss':
-		message.innerHTML = `${convertToWord(userChoice)}<sub>(User)</sub>and ${convertToWord(computerChoices)}<sub>(Computer)</sub>.Its Draw`;
+		message.innerHTML = `${convertToWord(userChoice)}<sub>(User)</sub>  and ${convertToWord(computerChoices)}<sub>(Computer)</sub>.  Its Draw`;
 		document.getElementById(choice).classList.add('brown-glow');
 		setTimeout(function () {
 			document.getElementById(choice).classList.remove('brown-glow')
@@ -50,9 +50,9 @@ function game(userChoice) {
 	computerScore_h1.innerHTML = `${computerScore}`;
 	if (userScore === 15 || computerScore === 15) {
 		if (userScore > computerScore) {
-			message.innerHTML = `${convertToWord(userChoice)}beats ${convertToWord(computerChoices)}.You win the match 🏆🏆`;
+			message.innerHTML = `${convertToWord(userChoice)}  beats ${convertToWord(computerChoices)}.  You win the match 🏆🏆`;
 		} else {
-			message.innerHTML = `${convertToWord(computerChoices)}beats ${convertToWord(userChoice)}.You Lose the match 🤗🤗`;
+			message.innerHTML = `${convertToWord(computerChoices)}  beats ${convertToWord(userChoice)}.  You Lose the match 🤗🤗`;
 		}
 		userScore = 0;
 		computerScore = 0;
