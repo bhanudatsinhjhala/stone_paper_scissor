@@ -4,12 +4,12 @@ body {
 	text-align: center;
 	background-color: #4C4D4F;
 	color: #4ECCA3;
-	font-family: 'Dancing Script', 'cursive'
+	font-family: 'Dancing Script', 'cursive';
 }
 header {
 	padding: 20px;
 	font-size: 2rem;
-	font-family: 'cursive', 'lobster'
+	font-family: 'cursive', 'lobster';
 }
 h2 {
 	font-size: 2rem
@@ -21,7 +21,7 @@ p {
 	font-size: 1.5rem
 }
 .message{
-  height: 5vh;
+  height: 15vh;
   font-family: "cursive";
 }
 .container {

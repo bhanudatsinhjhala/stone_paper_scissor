@@ -27,7 +27,7 @@ function game(userChoice) {
 	case 'sr':
 	case 'rp':
 	case 'ps':
-		message.innerHTML = `${convertToWord(computerChoices)}<sub>(User)</sub>  destroys ${convertToWord(userChoice)}<sub>(Computer)</sub>.  You Lose 💩💩`;
+		message.innerHTML = `${convertToWord(computerChoices)}<sub>(Computer)</sub>  destroys ${convertToWord(userChoice)}<sub>(User)</sub>.  You Lose 💩💩`;
 		document.getElementById(choice).classList.add('red-glow');
 		setTimeout(function () {
 			document.getElementById(choice).classList.remove('red-glow')
@@ -50,9 +50,9 @@ function game(userChoice) {
 	computerScore_h1.innerHTML = `${computerScore}`;
 	if (userScore === 15 || computerScore === 15) {
 		if (userScore > computerScore) {
-			message.innerHTML = `${convertToWord(userChoice)}  beats ${convertToWord(computerChoices)}.  You win the match 🏆🏆`;
+			alert(`${convertToWord(userChoice)}  beats ${convertToWord(computerChoices)}.  You win the match 🏆🏆`);
 		} else {
-			message.innerHTML = `${convertToWord(computerChoices)}  beats ${convertToWord(userChoice)}.  You Lose the match 🤗🤗`;
+			alert(`${convertToWord(computerChoices)}  beats ${convertToWord(userChoice)}.  You Lose the match 🤗🤗`);
 		}
 		userScore = 0;
 		computerScore = 0;
