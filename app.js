@@ -1,3 +1,5 @@
+var userName= prompt("Enter your Name");
+document.querySelector(".user").innerHTML=userName;
 var userScore = 0;
 var computerScore = 0;
 var userScore_h1 = document.querySelector(".user-score");
@@ -48,14 +50,18 @@ function game(userChoice) {
 	}
 	userScore_h1.innerHTML = `${userScore}`;
 	computerScore_h1.innerHTML = `${computerScore}`;
-	if (userScore === 15 || computerScore === 15) {
+	if (userScore_h1.innerHTML === '15' || computerScore_h1.innerHTML === '15') {
 		if (userScore > computerScore) {
-			alert(`${convertToWord(userChoice)}  beats ${convertToWord(computerChoices)}.  You win the match 🏆🏆`);
+			userScore = 0;
+			computerScore = 0;
+			message.innerHTML = `${convertToWord(userChoice)}<sub>(User)</sub>  destroys ${convertToWord(computerChoices)}<sub>(Computer)</sub>.  You win 🔥🔥`;
+			alert(`${convertToWord(userChoice)}  beats ${convertToWord(computerChoices)}.  You win the match 🏆🏆. Congratulations on your win ${userName}`);
 		} else {
-			alert(`${convertToWord(computerChoices)}  beats ${convertToWord(userChoice)}.  You Lose the match 🤗🤗`);
+			message.innerHTML = `${convertToWord(computerChoices)}<sub>(Computer)</sub>  destroys ${convertToWord(userChoice)}<sub>(User)</sub>.  You Lose 💩💩`;
+			userScore = 0;
+			computerScore = 0;
+			alert(`${convertToWord(computerChoices)}  beats ${convertToWord(userChoice)}.  You Lose the match. Sorry ${userName} 🤗🤗`);
 		}
-		userScore = 0;
-		computerScore = 0;
 	}
 }
 
